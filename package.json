@@ -1,0 +1,26 @@
+{
+  "name": "daweb",
+  "version": "0.0.0",
+  "description": "n",
+  "main": "n",
+  "scripts": {
+    "test": "n"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PgBiel/daweb.git"
+  },
+  "keywords": [
+    "n"
+  ],
+  "author": "n",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PgBiel/daweb/issues"
+  },
+  "homepage": "https://github.com/PgBiel/daweb#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
