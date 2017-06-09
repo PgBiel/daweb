@@ -33,5 +33,5 @@
   function buttonGo() {
     return goToUrl();
   }
-  document.getElementById("buttonThing").addEventListener("click", function() { buttonGo(); });
+  if (!thing) document.getElementById("buttonThing").addEventListener("click", function() { buttonGo(); });
 })(window, document);
