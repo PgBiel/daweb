@@ -1,4 +1,5 @@
 (function(window, document){
+  var ENTER_KEY = 13;
   function getURLParameter(name) {
     return decodeURIComponent(
       (
@@ -33,5 +34,12 @@
   function buttonGo() {
     return goToUrl();
   }
-  if (!thing) document.getElementById("buttonThing").addEventListener("click", function() { buttonGo(); });
+  if (!thing) {
+    document.getElementById("buttonThing").addEventListener("click", function() { buttonGo(); });
+    document.getElementById("k").addEventListener("keydown", function(e) {
+      if (e.keyCode === ENTER_KEY) {
+        buttonGo();
+      }
+    });
+  }
 })(window, document);
