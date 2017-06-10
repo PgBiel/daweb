@@ -15,7 +15,10 @@
   }
   var thing = getURLParameter("z");
   if (thing) {
-    document.body.innerHTML = "<br/><br/><br/><h1>" + thing + " has been absolutely DDoSed and Wrecked</h1>";
+    document.body.innerHTML = "<span id=\"arrow\">\
+      <a href=\"" + window.location.protocol + "//" + window.location.pathname + "\">&#8617;</a>\
+    </span>\
+    <br/><br/><br/><h1>" + thing + " has been absolutely DDoSed and Wrecked</h1>";
   }
   function goToUrl() {
     var param = document.getElementById("k").value;

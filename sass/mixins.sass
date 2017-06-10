@@ -1,0 +1,13 @@
+@import funcs
+
+=multiple($names, $val)
+  $MODIFIER_STR: "_"
+  $firststr: nth($names, 1)
+  $skip-first: if(length($names) > 1 and str-index(inspect($names), " #{$MODIFIER_STR}"), true, false)
+  @for $i from 1 through length($names)
+    $name: nth($names, $i)
+    @if $i != 1 or not $skip-first
+      @if starts-with($name, $MODIFIER_STR)
+        #{$firststr + str-slice($name, str-length($MODIFIER_STR) + 1)}: $val
+      @else
+        #{$name}: $val
