@@ -14,9 +14,10 @@
     ) || null;
   }
   var thing = getURLParameter("z");
+  var wl = window.location;
   if (thing) {
     document.body.innerHTML = "<span id=\"arrow\">\
-      <a href=\"" + window.location.protocol + "//" + window.location.pathname + "\">&#8617;</a>\
+      <a href=\"" + wl.protocol + "//" + wl.host + wl.pathname + "\">&#8617;</a>\
     </span>\
     <br/><br/><br/><h1>" + thing + " has been absolutely DDoSed and Wrecked</h1>";
   }
